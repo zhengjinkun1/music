@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        var arr = [123333, 2333333, 234445, 122222];
+        // for(let i=0;i<arr.length;i++){
+        arr.forEach(v => {
+            var le = getPlayCount(v);
+            
+        })
+        // var arr1 = arr.slice(0,1)[0];
+        // 
+        // }
+        function getPlayCount(count) {
+            let num = count / 10000
+            if (num < 1) {
+                return num
+            } else if (num >= 1 && num < 10000) {
+                return Math.floor(num * 10) / 10 + '万'
+            } else {
+                return Math.floor(num / 1000) / 10 + '亿'
+            }
+        }
+        
+
+
+    </script>
+</body>
+
+</html>
